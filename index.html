@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mongkulviseth Rithy — Cybersecurity Professional Portfolio</title>
+  <meta name="description" content="Portfolio of Mongkulviseth Rithy — Cybersecurity Professional specializing in application security, penetration testing, network security, and AI automation." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ====== PARTICLES ====== -->
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- ====== NAVBAR ====== -->
+  <nav class="navbar" id="navbar">
+    <a class="nav-brand" href="#hero">
+      <span class="brand-icon">MR</span>
+      <span>Mongkulviseth</span>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#hero" class="active" data-section="hero">Home</a></li>
+      <li><a href="#about" data-section="about">About</a></li>
+      <li><a href="#experience" data-section="experience">Experience</a></li>
+      <li><a href="#skills" data-section="skills">Skills</a></li>
+      <li><a href="#projects" data-section="projects">Projects</a></li>
+      <li><a href="#certifications" data-section="certifications">Certifications</a></li>
+      <li><a href="#education" data-section="education">Education</a></li>
+      <li><a href="#contact" data-section="contact">Contact</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ====== PAGE WRAPPER ====== -->
+  <div class="page-wrapper">
+
+    <!-- ====== HERO SECTION ====== -->
+    <section class="hero-section" id="hero">
+      <div class="hero-profile">
+        <div class="hero-profile-img-wrapper">
+          <img src="profile.jpg" alt="Mongkulviseth Rithy" class="hero-profile-img" id="profileImg" />
+          <div class="status-badge">
+            <span class="status-dot"></span>
+            <span>Available for hire</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-content">
+        <div class="hero-greeting">
+          <span>👋</span>
+          <span>Hello, I'm</span>
+        </div>
+        <h1 class="hero-name">
+          <span>Mongkulviseth</span><br />
+          <span class="gradient-text">Rithy</span>
+        </h1>
+        <div class="hero-title">
+          <span class="title-icon">🛡️</span>
+          <span>Cybersecurity Professional</span>
+        </div>
+        <p class="hero-bio">
+          Security Specialist focused on application penetration testing, vulnerability management, and defensive engineering. Adept at developing custom automated solutions to optimize daily security workflows, perform compliance audits, and reinforce critical systems against emerging attack vectors.
+        </p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary">
+            <span>📬</span> Get in Touch
+          </a>
+          <a href="#projects" class="btn btn-secondary">
+            <span>🔍</span> View Projects
+          </a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <div class="stat-value">3+</div>
+            <div class="stat-label">Years Experience</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value">4</div>
+            <div class="stat-label">Certifications</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value">5+</div>
+            <div class="stat-label">Projects</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- ====== ABOUT SECTION ====== -->
+    <section class="section" id="about">
+      <div class="section-header">
+        <div class="section-label">Introduction</div>
+        <h2 class="section-title">About Me</h2>
+        <p class="section-subtitle">A forward-thinking cybersecurity specialist with a passion for innovation</p>
+      </div>
+      <div class="grid-2">
+        <div class="card card-highlight" style="grid-column: 1 / -1;">
+          <p style="font-size: 1.05rem; line-height: 1.9; color: var(--text-secondary);">
+            I am a passionate and forward-thinking Computer Scientist with a strong interest in Application Security and Automation. Grounded in a solid foundation of computer science principles and problem-solving skills, I actively explore how emerging technologies can be applied to solve real-world challenges.
+          </p>
+          <br />
+          <p style="font-size: 1.05rem; line-height: 1.9; color: var(--text-secondary);">
+            Over the course of my career, I have delivered key offensive and compliance-driven initiatives across enterprise environments, contributing to major regulatory projects including <b>PCI DSS</b>, <b>HIPAA</b>, and comprehensive <b>Security Awareness</b> programs. As a specialized <b>Application Penetration Tester</b>, I combine deep technical exploitation with defensive end-to-end <b>Vulnerability Assessments</b> and <b>OS Configuration Hardening</b> to systematically eliminate attack vectors and safeguard mission-critical systems.
+          </p>
+          <br />
+          <p style="font-size: 1.05rem; line-height: 1.9; color: var(--text-secondary);">
+            Always eager to learn, I stay up to date with the latest advancements in cybersecurity and automation. My goal is to continue developing innovative, user-centered solutions that make a tangible impact in both enterprise and community settings.
+          </p>
+        </div>
+      </div>
+
+      <!-- Key Skills Heading -->
+      <div class="section-header" style="margin-top: var(--space-2xl); margin-bottom: var(--space-lg);">
+        <div class="section-label">Core Focus</div>
+        <h3 class="section-title" style="font-size: 1.75rem;">Key Skills</h3>
+      </div>
+
+      <!-- 4 Key Skills Highlight Boxes (2x2 Grid) -->
+      <div class="grid-2">
+        <div class="card skill-card">
+          <div class="skill-card-icon">🎯</div>
+          <div class="skill-card-title">Application Pentesting</div>
+          <p class="skill-card-desc">
+            Identifying and exploiting vulnerabilities across web applications, REST APIs, and auth mechanisms using OWASP methodologies.
+          </p>
+          <div class="tags">
+            <span class="tag tag-cyan">OWASP Top 10</span>
+            <span class="tag tag-cyan">Burp Suite</span>
+            <span class="tag tag-gold">Exploitation</span>
+          </div>
+        </div>
+
+        <div class="card skill-card">
+          <div class="skill-card-icon">🔍</div>
+          <div class="skill-card-title">Vulnerability Assessment</div>
+          <p class="skill-card-desc">
+            Automated scanning, CVE mapping, service enumeration, and severity classification with prioritized remediation roadmaps.
+          </p>
+          <div class="tags">
+            <span class="tag tag-cyan">Nessus</span>
+            <span class="tag tag-cyan">OpenVAS</span>
+            <span class="tag tag-gold">CVE Mapping</span>
+          </div>
+        </div>
+
+        <div class="card skill-card">
+          <div class="skill-card-icon">🛡️</div>
+          <div class="skill-card-title">Systems Hardening</div>
+          <p class="skill-card-desc">
+            Securing OS configurations, network perimeter defense, compliance auditing (PCI DSS, HIPAA), and reducing attack surfaces.
+          </p>
+          <div class="tags">
+            <span class="tag tag-cyan">PCI DSS</span>
+            <span class="tag tag-cyan">HIPAA</span>
+            <span class="tag tag-gold">OS Hardening</span>
+          </div>
+        </div>
+
+        <div class="card skill-card">
+          <div class="skill-card-icon">⚡</div>
+          <div class="skill-card-title">Security Automation</div>
+          <p class="skill-card-desc">
+            Developing custom Python scripts, AI chatbots, and automated workflows to accelerate security audits and incident response.
+          </p>
+          <div class="tags">
+            <span class="tag tag-cyan">Python</span>
+            <span class="tag tag-cyan">PowerShell</span>
+            <span class="tag tag-gold">AI Workflows</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- ====== EXPERIENCE SECTION ====== -->
+    <section class="section" id="experience">
+      <div class="section-header">
+        <div class="section-label">Career Journey</div>
+        <h2 class="section-title">Professional Experience</h2>
+        <p class="section-subtitle">Building expertise across cybersecurity, application security, and automation</p>
+      </div>
+
+      <!-- Technical Experience -->
+      <div class="grid-2" style="margin-bottom: var(--space-2xl);">
+        <!-- Top Left: Specialist, IT Security (Pentest) -->
+        <div class="card skill-card">
+          <div class="skill-card-icon">🛡️</div>
+          <div class="skill-card-title">Specialist, IT Security (Pentest)</div>
+          <div class="timeline-date">May 2024 — Present</div>
+          <div class="timeline-org">Enterprise Security & Application Defense</div>
+          <p class="skill-card-desc">
+            Conduct comprehensive web application and API penetration testing, vulnerability assessments, and security compliance audits for regulatory standards including PCI DSS and HIPAA.
+          </p>
+          <p class="skill-card-desc" style="margin-top: var(--space-sm);">
+            Perform OS configuration hardening, threat vector remediation, and collaborate with cross-functional engineering teams to eliminate security flaws and improve organizational security posture.
+          </p>
+          <div class="tags">
+            <span class="tag tag-cyan">Penetration Testing</span>
+            <span class="tag tag-cyan">Application Security</span>
+            <span class="tag tag-cyan">Vulnerability Assessment</span>
+            <span class="tag tag-cyan">OS Hardening</span>
+            <span class="tag tag-gold">PCI DSS</span>
+            <span class="tag tag-gold">HIPAA</span>
+          </div>
+        </div>
+
+        <!-- Top Right: Home Lab Experiment -->
+        <div class="card skill-card">
+          <div class="skill-card-icon">🔬</div>
+          <div class="skill-card-title">Home Lab Experiment</div>
+          <div class="timeline-date">May 2025 — Present</div>
+          <p class="skill-card-desc">
+            Designed and deployed a virtual lab environment using VMware with Kali Linux, Windows Server, Metasploitable, DVWA, and OWASP Juice Shop. Conducted network and service enumeration with Nmap, Netcat, and Masscan, and performed vulnerability assessments using Nessus Essentials and OpenVAS.
+          </p>
+          <p class="skill-card-desc" style="margin-top: var(--space-sm);">
+            Exploited vulnerabilities with tools like Metasploit and SQLmap, and tested web applications for XSS, SQLi, and CSRF using Burp Suite and Nessus.
+          </p>
+          <div class="tags">
+            <span class="tag tag-cyan">VirtualBox</span>
+            <span class="tag tag-cyan">Kali Linux</span>
+            <span class="tag tag-cyan">Metasploit</span>
+            <span class="tag tag-cyan">Nmap</span>
+            <span class="tag tag-cyan">Burp Suite</span>
+            <span class="tag tag-cyan">Wireshark</span>
+            <span class="tag tag-gold">Penetration Testing</span>
+          </div>
+        </div>
+
+        <!-- Bottom Left: Developer & Tester -->
+        <div class="card skill-card">
+          <div class="skill-card-icon">🤖</div>
+          <div class="skill-card-title">Developer & Tester</div>
+          <div class="timeline-date">May 2023 — July 2024</div>
+          <div class="timeline-org">Profinish</div>
+          <p class="skill-card-desc">
+            Delivered an innovative AI chatbot solution for LinkAlliance to transform frontline worker onboarding and health & safety training. Built using Botpress, StackAI, and Zapier, the chatbot provided interactive, knowledge-based responses and ChatGPT-powered conversations.
+          </p>
+          <p class="skill-card-desc" style="margin-top: var(--space-sm);">
+            Accessible via mobile and social media platforms, it enabled 24/7 access to critical information, delivering accurate responses in under 3 seconds. This user-centric solution reduced onboarding and training costs by 65%.
+          </p>
+          <div class="tags">
+            <span class="tag tag-cyan">Botpress</span>
+            <span class="tag tag-cyan">StackAI</span>
+            <span class="tag tag-cyan">Zapier</span>
+            <span class="tag tag-gold">ChatGPT Integration</span>
+            <span class="tag tag-gold">AI Development</span>
+          </div>
+        </div>
+
+        <!-- Bottom Right: Tech Lead Developer -->
+        <div class="card skill-card">
+          <div class="skill-card-icon">🥽</div>
+          <div class="skill-card-title">Tech Lead Developer</div>
+          <div class="timeline-date">February 2023 — May 2023</div>
+          <div class="timeline-org">Profinish</div>
+          <p class="skill-card-desc">
+            Contributed to the full lifecycle of a Virtual Reality safety training project focused on work-from-height scenarios. Independently built a functional VR environment using Unreal Engine, optimizing asset integration for cost-efficiency.
+          </p>
+          <p class="skill-card-desc" style="margin-top: var(--space-sm);">
+            The immersive solution significantly enhanced the onboarding experience and achieved a 60% reduction in operational costs. Integrated data collection features provided valuable insights into trainee performance.
+          </p>
+          <div class="tags">
+            <span class="tag tag-cyan">Unreal Engine</span>
+            <span class="tag tag-cyan">VR Development</span>
+            <span class="tag tag-cyan">3D Modeling</span>
+            <span class="tag tag-gold">Safety Training</span>
+            <span class="tag tag-gold">Data Analytics</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Other Experience -->
+      <div class="section-header" style="margin-top: var(--space-2xl);">
+        <div class="section-label">Additional Roles</div>
+        <h2 class="section-title" style="font-size: 1.75rem;">Other Experience</h2>
+      </div>
+      <div class="grid-2">
+        <div class="card skill-card">
+          <div class="skill-card-icon">🏭</div>
+          <div class="skill-card-title">Product Dispenser</div>
+          <div class="timeline-date">June 2024 — May 2025</div>
+          <div class="timeline-org">Lowie Recruitment</div>
+          <p class="skill-card-desc">
+            Worked in dairy production with responsibilities including ingredient dispensing, weighing, and ensuring compliance with food safety standards. Maintained hygiene standards and proven ability to collaborate effectively in a team environment.
+          </p>
+          <div class="tags">
+            <span class="tag tag-cyan">Food Safety</span>
+            <span class="tag tag-cyan">3WS System</span>
+            <span class="tag tag-gold">Team Collaboration</span>
+          </div>
+        </div>
+
+        <div class="card skill-card">
+          <div class="skill-card-icon">⚙️</div>
+          <div class="skill-card-title">Machine Operator</div>
+          <div class="timeline-date">September 2023 — June 2024</div>
+          <div class="timeline-org">Enterprise Recruitment</div>
+          <p class="skill-card-desc">
+            Worked in plastic production, demonstrating strong attendance, reliability, and commitment to quality. Operated machinery including mini forklifts and pallet trucks, assembled components with attention to detail while upholding high quality standards.
+          </p>
+          <div class="tags">
+            <span class="tag tag-cyan">Machine Operation</span>
+            <span class="tag tag-cyan">Forklift Operation</span>
+            <span class="tag tag-gold">Quality Assurance</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- ====== SKILLS SECTION ====== -->
+    <section class="section" id="skills">
+      <div class="section-header">
+        <div class="section-label">Capabilities</div>
+        <h2 class="section-title">Technical Skills</h2>
+        <p class="section-subtitle">A comprehensive toolkit spanning security, development, and cloud infrastructure</p>
+      </div>
+      <div class="grid-3">
+        <!-- Skill: Programming -->
+        <div class="card skill-card">
+          <div class="skill-card-icon">💻</div>
+          <div class="skill-card-title">Programming Languages</div>
+          <p class="skill-card-desc">Proficient in multiple programming languages for various applications</p>
+          <div class="tags">
+            <span class="tag tag-cyan">Python</span>
+            <span class="tag tag-cyan">Bash</span>
+            <span class="tag tag-cyan">PowerShell</span>
+            <span class="tag tag-cyan">SQL</span>
+            <span class="tag tag-cyan">PHP</span>
+            <span class="tag tag-cyan">JavaScript</span>
+            <span class="tag tag-cyan">CSS</span>
+            <span class="tag tag-cyan">HTML</span>
+            <span class="tag tag-gold">Java</span>
+            <span class="tag tag-gold">C++</span>
+          </div>
+        </div>
+
+        <!-- Skill: Network -->
+        <div class="card skill-card">
+          <div class="skill-card-icon">🌐</div>
+          <div class="skill-card-title">Network Infrastructure</div>
+          <p class="skill-card-desc">Comprehensive networking knowledge from configuration to monitoring</p>
+          <div class="tags">
+            <span class="tag tag-cyan">IP Addressing</span>
+            <span class="tag tag-cyan">Subnetting</span>
+            <span class="tag tag-cyan">Routing</span>
+            <span class="tag tag-cyan">VLAN</span>
+            <span class="tag tag-cyan">Wireless Networks</span>
+            <span class="tag tag-gold">Virtualization</span>
+            <span class="tag tag-gold">Cloud Networking</span>
+            <span class="tag tag-gold">Network Monitoring</span>
+          </div>
+        </div>
+
+        <!-- Skill: Cybersecurity -->
+        <div class="card skill-card">
+          <div class="skill-card-icon">🛡️</div>
+          <div class="skill-card-title">Cybersecurity</div>
+          <p class="skill-card-desc">Advanced security expertise in threat analysis and risk management</p>
+          <div class="tags">
+            <span class="tag tag-cyan">Threat Analysis</span>
+            <span class="tag tag-cyan">Vulnerability Assessment</span>
+            <span class="tag tag-cyan">Incident Response</span>
+            <span class="tag tag-cyan">Digital Forensics</span>
+            <span class="tag tag-gold">Risk Management</span>
+            <span class="tag tag-gold">Cryptography</span>
+            <span class="tag tag-gold">PKI</span>
+          </div>
+        </div>
+
+        <!-- Skill: PenTest -->
+        <div class="card skill-card">
+          <div class="skill-card-icon">🎯</div>
+          <div class="skill-card-title">Penetration Testing</div>
+          <p class="skill-card-desc">Comprehensive pentesting methodology and ethical hacking skills</p>
+          <div class="tags">
+            <span class="tag tag-cyan">Planning & Scoping</span>
+            <span class="tag tag-cyan">Information Gathering</span>
+            <span class="tag tag-cyan">Vulnerability Scanning</span>
+            <span class="tag tag-cyan">Exploitation</span>
+            <span class="tag tag-gold">Post-Exploitation</span>
+            <span class="tag tag-gold">Metasploit</span>
+            <span class="tag tag-gold">Burp Suite</span>
+          </div>
+        </div>
+
+        <!-- Skill: Database -->
+        <div class="card skill-card">
+          <div class="skill-card-icon">🗄️</div>
+          <div class="skill-card-title">Database Systems</div>
+          <p class="skill-card-desc">Experience with various database technologies and management</p>
+          <div class="tags">
+            <span class="tag tag-cyan">MongoDB</span>
+            <span class="tag tag-cyan">MySQL</span>
+            <span class="tag tag-cyan">PostgreSQL</span>
+            <span class="tag tag-gold">Firebase</span>
+          </div>
+        </div>
+
+        <!-- Skill: Cloud -->
+        <div class="card skill-card">
+          <div class="skill-card-icon">☁️</div>
+          <div class="skill-card-title">Cloud & DevOps</div>
+          <p class="skill-card-desc">Modern cloud platforms and development operations</p>
+          <div class="tags">
+            <span class="tag tag-cyan">AWS</span>
+            <span class="tag tag-cyan">Google Cloud</span>
+            <span class="tag tag-cyan">Azure</span>
+            <span class="tag tag-gold">Docker</span>
+          </div>
+        </div>
+
+        <!-- Skill: Dev Tools -->
+        <div class="card skill-card">
+          <div class="skill-card-icon">🔧</div>
+          <div class="skill-card-title">Development Tools</div>
+          <p class="skill-card-desc">Essential tools and frameworks for modern development</p>
+          <div class="tags">
+            <span class="tag tag-cyan">Kali Linux</span>
+            <span class="tag tag-cyan">Git</span>
+            <span class="tag tag-cyan">VS Code</span>
+            <span class="tag tag-gold">React Native</span>
+            <span class="tag tag-gold">Django</span>
+          </div>
+        </div>
+
+        <!-- Skill: Professional -->
+        <div class="card skill-card">
+          <div class="skill-card-icon">🤝</div>
+          <div class="skill-card-title">Professional Skills</div>
+          <p class="skill-card-desc">Essential soft skills for effective collaboration and leadership</p>
+          <div class="tags">
+            <span class="tag tag-cyan">Problem Solving</span>
+            <span class="tag tag-cyan">Team Collaboration</span>
+            <span class="tag tag-cyan">Communication</span>
+            <span class="tag tag-gold">Report Writing</span>
+            <span class="tag tag-gold">Analytical Thinking</span>
+            <span class="tag tag-gold">Continuous Learning</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- ====== PROJECTS SECTION ====== -->
+    <section class="section" id="projects">
+      <div class="section-header">
+        <div class="section-label">Portfolio</div>
+        <h2 class="section-title">Featured Projects</h2>
+        <p class="section-subtitle">Impactful solutions spanning security tooling, automation, e-commerce, and AI</p>
+      </div>
+      <div class="grid-3">
+        <!-- Project 1 (Top Left): Sentinel Scanner -->
+        <div class="card project-card">
+          <div class="project-card-body">
+            <div class="project-card-header">
+              <span class="project-type">Security Tool / Automation</span>
+              <a href="https://github.com/Vertic1e" target="_blank" class="project-link" title="View on GitHub">🔗</a>
+            </div>
+            <div class="project-title">Sentinel Scanner</div>
+            <p class="project-desc">
+              An automated vulnerability scanning and reconnaissance tool engineered to streamline network enumeration, identify service misconfigurations, and generate actionable security audit reports with CVE risk prioritization.
+            </p>
+            <div class="tags">
+              <span class="tag tag-cyan">Python</span>
+              <span class="tag tag-cyan">Nmap</span>
+              <span class="tag tag-cyan">Vulnerability Scanning</span>
+              <span class="tag tag-gold">CVE Mapping</span>
+              <span class="tag tag-gold">Security Automation</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 (Top Center): Secure Scope -->
+        <div class="card project-card">
+          <div class="project-card-body">
+            <div class="project-card-header">
+              <span class="project-type">Application Security</span>
+              <a href="https://github.com/Vertic1e" target="_blank" class="project-link" title="View on GitHub">🔗</a>
+            </div>
+            <div class="project-title">Secure Scope</div>
+            <p class="project-desc">
+              A specialized security assessment and attack surface scoping toolkit designed for testing REST APIs and web applications against OWASP Top 10 vulnerabilities, verifying authentication mechanisms, and auditing header policies.
+            </p>
+            <div class="tags">
+              <span class="tag tag-cyan">Python</span>
+              <span class="tag tag-cyan">OWASP Top 10</span>
+              <span class="tag tag-cyan">API Security</span>
+              <span class="tag tag-cyan">Burp Suite</span>
+              <span class="tag tag-gold">Audit Tool</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: E-Commerce Platform -->
+        <div class="card project-card">
+          <div class="project-card-body">
+            <div class="project-card-header">
+              <span class="project-type">Web App</span>
+              <a href="https://github.com/Vertic1e/KonSoup40" target="_blank" class="project-link" title="View on GitHub">🔗</a>
+            </div>
+            <div class="project-title">E-Commerce Platform</div>
+            <p class="project-desc">
+              Designed and developed a full-stack web app using HTML, JavaScript, and CSS with Telegram API integration. Features include order placement, cart management, geolocation via Leaflet, payment proof upload, and order history with real-time Telegram bot notifications.
+            </p>
+            <div class="tags">
+              <span class="tag tag-cyan">HTML</span>
+              <span class="tag tag-cyan">JavaScript</span>
+              <span class="tag tag-cyan">CSS</span>
+              <span class="tag tag-gold">Telegram API</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4: FiNoodle -->
+        <div class="card project-card">
+          <div class="project-card-body">
+            <div class="project-card-header">
+              <span class="project-type">Automation</span>
+              <a href="https://github.com/uoa-compsci399-s2-2022/Finale" target="_blank" class="project-link" title="View on GitHub">🔗</a>
+            </div>
+            <div class="project-title">FiNoodle</div>
+            <p class="project-desc">
+              A Python application that automates conversion between client-specified question formats and Moodle XML. Reduced quiz creation workload by 70% through robust error checking and efficient formatting, significantly improving accuracy and reliability of Moodle quizzes.
+            </p>
+            <div class="tags">
+              <span class="tag tag-cyan">Python</span>
+              <span class="tag tag-cyan">Moodle</span>
+              <span class="tag tag-gold">Automation</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 5: BotTalk -->
+        <div class="card project-card">
+          <div class="project-card-body">
+            <div class="project-card-header">
+              <span class="project-type">AI / Chatbot</span>
+              <a href="https://www.facebook.com/profile.php?id=61572726967783" target="_blank" class="project-link" title="View on Facebook">🔗</a>
+            </div>
+            <div class="project-title">BotTalk</div>
+            <p class="project-desc">
+              An AI-powered chatbot for SMEs in Cambodia, designed to automate customer service, recommend products, process orders, and securely collect customer data. Enhances engagement, improves efficiency, and reduces customer support costs by over $500/month through 24/7 personalized automation.
+            </p>
+            <div class="tags">
+              <span class="tag tag-cyan">Botpress</span>
+              <span class="tag tag-cyan">ChatGPT</span>
+              <span class="tag tag-cyan">Zapier</span>
+              <span class="tag tag-gold">API</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- ====== CERTIFICATIONS SECTION ====== -->
+    <section class="section" id="certifications">
+      <div class="section-header">
+        <div class="section-label">Credentials</div>
+        <h2 class="section-title">Certifications & Achievements</h2>
+        <p class="section-subtitle">Industry-recognized certifications validating deep expertise</p>
+      </div>
+
+      <!-- Certifications -->
+      <div class="grid-2" style="margin-bottom: var(--space-2xl);">
+        <div class="card cert-card">
+          <div class="cert-icon">🏅</div>
+          <div class="cert-info">
+            <div class="cert-name">CompTIA PenTest+</div>
+            <div class="cert-issuer">CompTIA</div>
+            <div class="cert-year">2025</div>
+            <p class="cert-desc">
+              Validates hands-on skills in penetration testing, vulnerability assessment, and management — demonstrating the ability to evaluate and enhance an organization's network resilience against cyberattacks.
+            </p>
+          </div>
+        </div>
+
+        <div class="card cert-card">
+          <div class="cert-icon">🏅</div>
+          <div class="cert-info">
+            <div class="cert-name">CompTIA Security+</div>
+            <div class="cert-issuer">CompTIA</div>
+            <div class="cert-year">2024</div>
+            <p class="cert-desc">
+              Demonstrates expertise in security concepts, threats, vulnerabilities, mitigations, security architecture, security operations, and security program management and oversight.
+            </p>
+          </div>
+        </div>
+
+        <div class="card cert-card">
+          <div class="cert-icon">🏅</div>
+          <div class="cert-info">
+            <div class="cert-name">CompTIA Network+</div>
+            <div class="cert-issuer">CompTIA</div>
+            <div class="cert-year">2024</div>
+            <p class="cert-desc">
+              Validates practical knowledge in establishing and maintaining network connectivity, configuring services, implementing cloud and virtual network solutions, and applying monitoring, troubleshooting, and hardening techniques.
+            </p>
+          </div>
+        </div>
+
+        <div class="card cert-card">
+          <div class="cert-icon">🌍</div>
+          <div class="cert-info">
+            <div class="cert-name">Common Purpose Certification</div>
+            <div class="cert-issuer">Common Purpose</div>
+            <div class="cert-year">2023</div>
+            <p class="cert-desc">
+              Earned through a micro-internship focused on applying technical skills to address global challenges, with a contribution centered on leveraging technology to help reduce inequality.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Achievements -->
+      <div class="section-header" style="margin-top: var(--space-2xl);">
+        <div class="section-label">Recognition</div>
+        <h2 class="section-title" style="font-size: 1.75rem;">Academic Achievements</h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-date">2021</div>
+          <div class="timeline-title">Outstanding Achievement in Object Oriented Software Development</div>
+          <p class="timeline-desc">
+            Recognized for exceptional understanding of core programming principles, design patterns, and clean coding practices — building robust, scalable, and maintainable software solutions.
+          </p>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">2021</div>
+          <div class="timeline-title">Outstanding Achievement in Computer Organisation</div>
+          <p class="timeline-desc">
+            Strong grasp of low-level computing concepts including digital logic, processor architecture, memory management, and system-level programming.
+          </p>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">2020</div>
+          <div class="timeline-title">Outstanding Achievement in Introduction to Computer Systems</div>
+          <p class="timeline-desc">
+            Demonstrated strong understanding of system fundamentals such as operating systems, computer architecture, and low-level programming.
+          </p>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">2020</div>
+          <div class="timeline-title">Outstanding Achievement in Principles of Programming</div>
+          <p class="timeline-desc">
+            Excellence in foundational programming concepts, algorithmic thinking, and software problem-solving with clear, efficient, and well-structured code.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- ====== EDUCATION SECTION ====== -->
+    <section class="section" id="education">
+      <div class="section-header">
+        <div class="section-label">Background</div>
+        <h2 class="section-title">Education</h2>
+        <p class="section-subtitle">Academic foundations in computer science and engineering</p>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-date">March 2020 — November 2023</div>
+          <div class="timeline-title">Bachelor of Computer Science</div>
+          <div class="timeline-org">University of Auckland (New Zealand)</div>
+          <p class="timeline-desc">
+            Specialized in Computer Networks, Software Engineering, and Data Science. Gained strong theoretical programming and networking foundations through hands-on projects, research, and team collaborations.
+          </p>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">February 2019 — November 2020</div>
+          <div class="timeline-title">Foundational Education</div>
+          <div class="timeline-org">Taylor College (New Zealand)</div>
+          <p class="timeline-desc">
+            Focused on Mathematics and Computer Science fundamentals. Participated in programming competitions and technology clubs.
+          </p>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">2015 — 2018</div>
+          <div class="timeline-title">High School</div>
+          <div class="timeline-org">Sisowath Highschool (Cambodia)</div>
+          <p class="timeline-desc">
+            Completed high school with a strong foundation in Mathematics (A+) and Physics (A), preparing for university-level studies in Computer Science.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- ====== CONTACT SECTION ====== -->
+    <section class="section" id="contact">
+      <div class="section-header">
+        <div class="section-label">Let's Connect</div>
+        <h2 class="section-title">Get in Touch</h2>
+        <p class="section-subtitle">I'm always open to new opportunities and collaborations</p>
+      </div>
+      <div class="contact-grid">
+        <a href="mailto:rm.viseth@gmail.com" class="card contact-card">
+          <div class="contact-icon">📧</div>
+          <div>
+            <div class="contact-label">Email</div>
+            <div class="contact-value">rm.viseth@gmail.com</div>
+          </div>
+        </a>
+        <a href="tel:+642108260944" class="card contact-card">
+          <div class="contact-icon">📱</div>
+          <div>
+            <div class="contact-label">Phone (NZ)</div>
+            <div class="contact-value">+64 210 826 0944</div>
+          </div>
+        </a>
+        <a href="tel:+85517714577" class="card contact-card">
+          <div class="contact-icon">📞</div>
+          <div>
+            <div class="contact-label">Phone (KH)</div>
+            <div class="contact-value">+855 17 714 577</div>
+          </div>
+        </a>
+        <a href="https://github.com/Vertic1e" target="_blank" class="card contact-card">
+          <div class="contact-icon">🐙</div>
+          <div>
+            <div class="contact-label">GitHub</div>
+            <div class="contact-value">github.com/Vertic1e</div>
+          </div>
+        </a>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- ====== FOOTER ====== -->
+  <footer class="footer">
+    <p>© <span id="currentYear"></span> <span>Mongkulviseth Rithy</span>. Crafted with precision.</p>
+  </footer>
+
+  <!-- ====== SCROLL TO TOP ====== -->
+  <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">↑</button>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
