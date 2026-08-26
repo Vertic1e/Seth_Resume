@@ -1,18 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mongkulviseth Rithy — Cybersecurity Professional Portfolio</title>
-  <meta name="description" content="Portfolio of Mongkulviseth Rithy — Cybersecurity Professional specializing in application security, penetration testing, network security, and AI automation." />
-  <link rel="stylesheet" href="style.css" />
+  <meta name="description" content="Portfolio of Mongkulviseth Rithy — Cybersecurity Professional specializing in application security, penetration testing, network security, and AI automation.">
+  <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body style="--mouse-x: 1217px; --mouse-y: 84px;" class="edit-mode-active">
 
   <!-- ====== PARTICLES ====== -->
-  <canvas id="particles-canvas"></canvas>
+  <canvas id="particles-canvas" width="1745" height="865"></canvas>
 
   <!-- ====== NAVBAR ====== -->
   <nav class="navbar" id="navbar">
@@ -22,10 +20,10 @@
     </a>
     <ul class="nav-links" id="navLinks">
       <li><a href="#hero" class="active" data-section="hero">Home</a></li>
-      <li><a href="#about" data-section="about">About</a></li>
-      <li><a href="#experience" data-section="experience">Experience</a></li>
-      <li><a href="#skills" data-section="skills">Skills</a></li>
-      <li><a href="#projects" data-section="projects">Projects</a></li>
+      <li><a href="#about" data-section="about" class="">About</a></li>
+      <li><a href="#experience" data-section="experience" class="">Experience</a></li>
+      <li><a href="#skills" data-section="skills" class="">Skills</a></li>
+      <li><a href="#projects" data-section="projects" class="">Projects</a></li>
       <li><a href="#certifications" data-section="certifications">Certifications</a></li>
       <li><a href="#education" data-section="education">Education</a></li>
       <li><a href="#contact" data-section="contact">Contact</a></li>
@@ -35,6 +33,13 @@
     </button>
   </nav>
 
+  <!-- ====== EDIT MODE BAR ====== -->
+  <div class="edit-mode-bar" id="editBar">
+    ✏️ Edit Mode — Click any text or tag to modify. Use ➕ Tag to add tags and × to delete.
+    <button class="btn btn-secondary" onclick="toggleEditMode()">Exit Edit Mode</button>
+    <button class="btn btn-primary" onclick="exportContent()">Export HTML</button>
+  </div>
+
   <!-- ====== PAGE WRAPPER ====== -->
   <div class="page-wrapper">
 
@@ -42,7 +47,7 @@
     <section class="hero-section" id="hero">
       <div class="hero-profile">
         <div class="hero-profile-img-wrapper">
-          <img src="profile.jpg" alt="Mongkulviseth Rithy" class="hero-profile-img" id="profileImg" />
+          <img src="profile.jpg" alt="Mongkulviseth Rithy" class="hero-profile-img" id="profileImg">
           <div class="status-badge">
             <span class="status-dot"></span>
             <span>Available for hire</span>
@@ -55,7 +60,7 @@
           <span>Hello, I'm</span>
         </div>
         <h1 class="hero-name">
-          <span>Mongkulviseth</span><br />
+          <span>Mongkulviseth</span><br>
           <span class="gradient-text">Rithy</span>
         </h1>
         <div class="hero-title">
@@ -72,6 +77,9 @@
           <a href="#projects" class="btn btn-secondary">
             <span>🔍</span> View Projects
           </a>
+          <button class="btn btn-ghost" onclick="toggleEditMode()" title="Enable inline editing">
+            <span>✏️</span> Edit Page
+          </button>
         </div>
         <div class="hero-stats">
           <div class="stat-item">
@@ -93,22 +101,22 @@
     <div class="section-divider"></div>
 
     <!-- ====== ABOUT SECTION ====== -->
-    <section class="section" id="about">
+    <section class="section visible" id="about">
       <div class="section-header">
         <div class="section-label">Introduction</div>
         <h2 class="section-title">About Me</h2>
         <p class="section-subtitle">A forward-thinking cybersecurity specialist with a passion for innovation</p>
       </div>
-      <div class="grid-2">
-        <div class="card card-highlight" style="grid-column: 1 / -1;">
+      <div class="grid-2" data-box-container="about" data-box-label="Key Skill Box">
+        <div class="card card-highlight" style="grid-column: 1 / -1; position: relative;">
           <p style="font-size: 1.05rem; line-height: 1.9; color: var(--text-secondary);">
             I am a passionate and forward-thinking Computer Scientist with a strong interest in Application Security and Automation. Grounded in a solid foundation of computer science principles and problem-solving skills, I actively explore how emerging technologies can be applied to solve real-world challenges.
           </p>
-          <br />
+          <br>
           <p style="font-size: 1.05rem; line-height: 1.9; color: var(--text-secondary);">
             Over the course of my career, I have delivered key offensive and compliance-driven initiatives across enterprise environments, contributing to major regulatory projects including <b>PCI DSS</b>, <b>HIPAA</b>, and comprehensive <b>Security Awareness</b> programs. As a specialized <b>Application Penetration Tester</b>, I combine deep technical exploitation with defensive end-to-end <b>Vulnerability Assessments</b> and <b>OS Configuration Hardening</b> to systematically eliminate attack vectors and safeguard mission-critical systems.
           </p>
-          <br />
+          <br>
           <p style="font-size: 1.05rem; line-height: 1.9; color: var(--text-secondary);">
             Always eager to learn, I stay up to date with the latest advancements in cybersecurity and automation. My goal is to continue developing innovative, user-centered solutions that make a tangible impact in both enterprise and community settings.
           </p>
@@ -122,57 +130,56 @@
       </div>
 
       <!-- 4 Key Skills Highlight Boxes (2x2 Grid) -->
-      <div class="grid-2">
-        <div class="card skill-card">
+      <div class="grid-2" data-box-container="about" data-box-label="Key Skill Box">
+        <div class="card skill-card" style="position: relative;">
           <div class="skill-card-icon">🎯</div>
           <div class="skill-card-title">Application Pentesting</div>
           <p class="skill-card-desc">
-            Identifying and exploiting vulnerabilities across web applications, REST APIs, and auth mechanisms using OWASP methodologies.
+            Deep structural analysis of web, mobile, and API environments; proficient in leveraging industry-standard tools (Burp Suite, Metasploit, Nmap) combined with custom scripts for deep manual exploitation and business logic testing.
           </p>
           <div class="tags">
             <span class="tag tag-cyan">OWASP Top 10</span>
             <span class="tag tag-cyan">Burp Suite</span>
             <span class="tag tag-gold">Exploitation</span>
-          </div>
+          <span class="tag tag-cyan">Sqlmap</span><span class="tag tag-cyan">Wireshark</span><span class="tag tag-cyan">Cryptography</span><span class="tag tag-cyan">Encryption</span><span class="tag tag-cyan">Custom Scripting</span></div>
         </div>
 
-        <div class="card skill-card">
+        <div class="card skill-card" style="position: relative;">
           <div class="skill-card-icon">🔍</div>
           <div class="skill-card-title">Vulnerability Assessment</div>
           <p class="skill-card-desc">
-            Automated scanning, CVE mapping, service enumeration, and severity classification with prioritized remediation roadmaps.
+            End-to-end scanning and analysis across network, host, and cloud environments; proficient in leveraging enterprise assessment tools (Nessus, Qualys, OpenVAS) combined with custom Python scripting for automated reporting, false-positive elimination, and risk-based remediation prioritization.
           </p>
           <div class="tags">
             <span class="tag tag-cyan">Nessus</span>
-            <span class="tag tag-cyan">OpenVAS</span>
+            
             <span class="tag tag-gold">CVE Mapping</span>
-          </div>
+          <span class="tag tag-cyan">Remediation Plan</span><span class="tag tag-cyan">Credential/Agent Scan<br></span><span class="tag tag-cyan">Log Review/Troubleshooting</span></div>
         </div>
 
-        <div class="card skill-card">
+        <div class="card skill-card" style="position: relative;">
           <div class="skill-card-icon">🛡️</div>
           <div class="skill-card-title">Systems Hardening</div>
           <p class="skill-card-desc">
-            Securing OS configurations, network perimeter defense, compliance auditing (PCI DSS, HIPAA), and reducing attack surfaces.
+            End-to-end security baseline implementation across Windows, Linux, and enterprise server environments; proficient in aligning systems with CIS Benchmarks, NIST, and DISA STIGs utilizing custom Bash/PowerShell automation to eliminate default misconfigurations, enforce least privilege, and minimize host attack surfaces.
           </p>
           <div class="tags">
             <span class="tag tag-cyan">PCI DSS</span>
             <span class="tag tag-cyan">HIPAA</span>
             <span class="tag tag-gold">OS Hardening</span>
-          </div>
+          <span class="tag tag-cyan">NIST</span><span class="tag tag-cyan">Custom Audit</span><span class="tag tag-cyan">Password Policy</span></div>
         </div>
 
-        <div class="card skill-card">
+        <div class="card skill-card" style="position: relative;">
           <div class="skill-card-icon">⚡</div>
-          <div class="skill-card-title">Security Automation</div>
+          <div class="skill-card-title">Security Awareness</div>
           <p class="skill-card-desc">
-            Developing custom Python scripts, AI chatbots, and automated workflows to accelerate security audits and incident response.
-          </p>
+            Designing, deploying, and analyzing controlled phishing, spear-phishing, smishing, and credential-harvesting simulations using tools like GoPhish, KnowBe4, or Proofpoint.&nbsp;Creating tailored learning modules for general staff, executive leadership (BEC defense), IT/Dev teams (secure coding, API safety), and finance personnel (wire fraud, invoice scams).</p>
           <div class="tags">
-            <span class="tag tag-cyan">Python</span>
-            <span class="tag tag-cyan">PowerShell</span>
-            <span class="tag tag-gold">AI Workflows</span>
-          </div>
+            
+            
+            
+          <span class="tag tag-cyan">GoPhish</span><span class="tag tag-cyan">Vishing<br></span><span class="tag tag-cyan">Security Training</span><span class="tag tag-cyan">AI Model Training<br></span></div>
         </div>
       </div>
     </section>
@@ -180,7 +187,7 @@
     <div class="section-divider"></div>
 
     <!-- ====== EXPERIENCE SECTION ====== -->
-    <section class="section" id="experience">
+    <section class="section visible" id="experience">
       <div class="section-header">
         <div class="section-label">Career Journey</div>
         <h2 class="section-title">Professional Experience</h2>
@@ -188,9 +195,9 @@
       </div>
 
       <!-- Technical Experience -->
-      <div class="grid-2" style="margin-bottom: var(--space-2xl);">
+      <div class="grid-2" style="margin-bottom: var(--space-2xl);" data-box-container="experience-other" data-box-label="Additional Role">
         <!-- Top Left: Specialist, IT Security (Pentest) -->
-        <div class="card skill-card">
+        <div class="card skill-card" style="position: relative;">
           <div class="skill-card-icon">🛡️</div>
           <div class="skill-card-title">Specialist, IT Security (Pentest)</div>
           <div class="timeline-date">October 2025 — Present</div>
@@ -212,7 +219,7 @@
         </div>
 
         <!-- Top Right: Home Lab Experiment -->
-        <div class="card skill-card">
+        <div class="card skill-card" style="position: relative;">
           <div class="skill-card-icon">🔬</div>
           <div class="skill-card-title">Home Lab Experiment</div>
           <div class="timeline-date">May 2025 — Present</div>
@@ -234,13 +241,13 @@
         </div>
 
         <!-- Bottom Left: Developer & Tester -->
-        <div class="card skill-card">
+        <div class="card skill-card" style="position: relative;">
           <div class="skill-card-icon">🤖</div>
-          <div class="skill-card-title">Developer & Tester</div>
+          <div class="skill-card-title">Developer &amp; Tester</div>
           <div class="timeline-date">May 2023 — July 2024</div>
           <div class="timeline-org">Profinish</div>
           <p class="skill-card-desc">
-            Delivered an innovative AI chatbot solution for LinkAlliance to transform frontline worker onboarding and health & safety training. Built using Botpress, StackAI, and Zapier, the chatbot provided interactive, knowledge-based responses and ChatGPT-powered conversations.
+            Delivered an innovative AI chatbot solution for LinkAlliance to transform frontline worker onboarding and health &amp; safety training. Built using Botpress, StackAI, and Zapier, the chatbot provided interactive, knowledge-based responses and ChatGPT-powered conversations.
           </p>
           <p class="skill-card-desc" style="margin-top: var(--space-sm);">
             Accessible via mobile and social media platforms, it enabled 24/7 access to critical information, delivering accurate responses in under 3 seconds. This user-centric solution reduced onboarding and training costs by 65%.
@@ -255,7 +262,7 @@
         </div>
 
         <!-- Bottom Right: Tech Lead Developer -->
-        <div class="card skill-card">
+        <div class="card skill-card" style="position: relative;">
           <div class="skill-card-icon">🥽</div>
           <div class="skill-card-title">Tech Lead Developer</div>
           <div class="timeline-date">February 2023 — May 2023</div>
@@ -317,15 +324,15 @@
     <div class="section-divider"></div>
 
     <!-- ====== SKILLS SECTION ====== -->
-    <section class="section" id="skills">
+    <section class="section visible" id="skills">
       <div class="section-header">
         <div class="section-label">Capabilities</div>
         <h2 class="section-title">Technical Skills</h2>
         <p class="section-subtitle">A comprehensive toolkit spanning security, development, and cloud infrastructure</p>
       </div>
-      <div class="grid-3">
+      <div class="grid-3" data-box-container="skills" data-box-label="Skill Category">
         <!-- Skill: Programming -->
-        <div class="card skill-card">
+        <div class="card skill-card" style="position: relative;">
           <div class="skill-card-icon">💻</div>
           <div class="skill-card-title">Programming Languages</div>
           <p class="skill-card-desc">Proficient in multiple programming languages for various applications</p>
@@ -344,7 +351,7 @@
         </div>
 
         <!-- Skill: Network -->
-        <div class="card skill-card">
+        <div class="card skill-card" style="position: relative;">
           <div class="skill-card-icon">🌐</div>
           <div class="skill-card-title">Network Infrastructure</div>
           <p class="skill-card-desc">Comprehensive networking knowledge from configuration to monitoring</p>
@@ -361,7 +368,7 @@
         </div>
 
         <!-- Skill: Cybersecurity -->
-        <div class="card skill-card">
+        <div class="card skill-card" style="position: relative;">
           <div class="skill-card-icon">🛡️</div>
           <div class="skill-card-title">Cybersecurity</div>
           <p class="skill-card-desc">Advanced security expertise in threat analysis and risk management</p>
@@ -377,12 +384,12 @@
         </div>
 
         <!-- Skill: PenTest -->
-        <div class="card skill-card">
+        <div class="card skill-card" style="position: relative;">
           <div class="skill-card-icon">🎯</div>
           <div class="skill-card-title">Penetration Testing</div>
           <p class="skill-card-desc">Comprehensive pentesting methodology and ethical hacking skills</p>
           <div class="tags">
-            <span class="tag tag-cyan">Planning & Scoping</span>
+            <span class="tag tag-cyan">Planning &amp; Scoping</span>
             <span class="tag tag-cyan">Information Gathering</span>
             <span class="tag tag-cyan">Vulnerability Scanning</span>
             <span class="tag tag-cyan">Exploitation</span>
@@ -393,7 +400,7 @@
         </div>
 
         <!-- Skill: Database -->
-        <div class="card skill-card">
+        <div class="card skill-card" style="position: relative;">
           <div class="skill-card-icon">🗄️</div>
           <div class="skill-card-title">Database Systems</div>
           <p class="skill-card-desc">Experience with various database technologies and management</p>
@@ -406,9 +413,9 @@
         </div>
 
         <!-- Skill: Cloud -->
-        <div class="card skill-card">
+        <div class="card skill-card" style="position: relative;">
           <div class="skill-card-icon">☁️</div>
-          <div class="skill-card-title">Cloud & DevOps</div>
+          <div class="skill-card-title">Cloud &amp; DevOps</div>
           <p class="skill-card-desc">Modern cloud platforms and development operations</p>
           <div class="tags">
             <span class="tag tag-cyan">AWS</span>
@@ -419,21 +426,10 @@
         </div>
 
         <!-- Skill: Dev Tools -->
-        <div class="card skill-card">
-          <div class="skill-card-icon">🔧</div>
-          <div class="skill-card-title">Development Tools</div>
-          <p class="skill-card-desc">Essential tools and frameworks for modern development</p>
-          <div class="tags">
-            <span class="tag tag-cyan">Kali Linux</span>
-            <span class="tag tag-cyan">Git</span>
-            <span class="tag tag-cyan">VS Code</span>
-            <span class="tag tag-gold">React Native</span>
-            <span class="tag tag-gold">Django</span>
-          </div>
-        </div>
+        
 
         <!-- Skill: Professional -->
-        <div class="card skill-card">
+        <div class="card skill-card" style="position: relative;">
           <div class="skill-card-icon">🤝</div>
           <div class="skill-card-title">Professional Skills</div>
           <p class="skill-card-desc">Essential soft skills for effective collaboration and leadership</p>
@@ -452,15 +448,15 @@
     <div class="section-divider"></div>
 
     <!-- ====== PROJECTS SECTION ====== -->
-    <section class="section" id="projects">
+    <section class="section visible" id="projects">
       <div class="section-header">
         <div class="section-label">Portfolio</div>
         <h2 class="section-title">Featured Projects</h2>
         <p class="section-subtitle">Impactful solutions spanning security tooling, automation, e-commerce, and AI</p>
       </div>
-      <div class="grid-3">
+      <div class="grid-3" data-box-container="projects" data-box-label="Project">
         <!-- Project 1 (Top Left): Sentinel Scanner -->
-        <div class="card project-card">
+        <div class="card project-card" style="position: relative;">
           <div class="project-card-body">
             <div class="project-card-header">
               <span class="project-type">Security Tool / Automation</span>
@@ -468,8 +464,7 @@
             </div>
             <div class="project-title">Sentinel Scanner</div>
             <p class="project-desc">
-              An automated vulnerability scanning and reconnaissance tool engineered to streamline network enumeration, identify service misconfigurations, and generate actionable security audit reports with CVE risk prioritization.
-            </p>
+              An automated vulnerability scanning and OS hardening scanning tool engineered to streamline end to end workflow from scanning to sign off report.</p>
             <div class="tags">
               <span class="tag tag-cyan">Python</span>
               <span class="tag tag-cyan">Nmap</span>
@@ -481,7 +476,7 @@
         </div>
 
         <!-- Project 2 (Top Center): Secure Scope -->
-        <div class="card project-card">
+        <div class="card project-card" style="position: relative;">
           <div class="project-card-body">
             <div class="project-card-header">
               <span class="project-type">Application Security</span>
@@ -489,20 +484,19 @@
             </div>
             <div class="project-title">Secure Scope</div>
             <p class="project-desc">
-              A specialized security assessment and attack surface scoping toolkit designed for testing REST APIs and web applications against OWASP Top 10 vulnerabilities, verifying authentication mechanisms, and auditing header policies.
-            </p>
+              An automated assessment framework covering the full attack lifecycle, from multi-source passive reconnaissance to targeted, active exploitation modules.&nbsp;Implemented heuristic response analysis algorithms to correlate status codes, payload execution artifacts, and response differentials, drastically reducing false positives during automated scans.</p>
             <div class="tags">
               <span class="tag tag-cyan">Python</span>
               <span class="tag tag-cyan">OWASP Top 10</span>
               <span class="tag tag-cyan">API Security</span>
-              <span class="tag tag-cyan">Burp Suite</span>
-              <span class="tag tag-gold">Audit Tool</span>
-            </div>
+              
+              
+            <span class="tag tag-cyan">Sqlmap</span><span class="tag tag-cyan">XSS</span><span class="tag tag-cyan">DNS</span><span class="tag tag-cyan">Nmap</span></div>
           </div>
         </div>
 
         <!-- Project 3: E-Commerce Platform -->
-        <div class="card project-card">
+        <div class="card project-card" style="position: relative;">
           <div class="project-card-body">
             <div class="project-card-header">
               <span class="project-type">Web App</span>
@@ -522,7 +516,7 @@
         </div>
 
         <!-- Project 4: FiNoodle -->
-        <div class="card project-card">
+        <div class="card project-card" style="position: relative;">
           <div class="project-card-body">
             <div class="project-card-header">
               <span class="project-type">Automation</span>
@@ -541,7 +535,7 @@
         </div>
 
         <!-- Project 5: BotTalk -->
-        <div class="card project-card">
+        <div class="card project-card" style="position: relative;">
           <div class="project-card-body">
             <div class="project-card-header">
               <span class="project-type">AI / Chatbot</span>
@@ -565,16 +559,16 @@
     <div class="section-divider"></div>
 
     <!-- ====== CERTIFICATIONS SECTION ====== -->
-    <section class="section" id="certifications">
+    <section class="section visible" id="certifications">
       <div class="section-header">
         <div class="section-label">Credentials</div>
-        <h2 class="section-title">Certifications & Achievements</h2>
+        <h2 class="section-title">Certifications &amp; Achievements</h2>
         <p class="section-subtitle">Industry-recognized certifications validating deep expertise</p>
       </div>
 
       <!-- Certifications -->
-      <div class="grid-2" style="margin-bottom: var(--space-2xl);">
-        <div class="card cert-card">
+      <div class="grid-2" style="margin-bottom: var(--space-2xl);" data-box-container="certifications" data-box-label="Certification">
+        <div class="card cert-card" style="position: relative;">
           <div class="cert-icon">🏅</div>
           <div class="cert-info">
             <div class="cert-name">CompTIA PenTest+</div>
@@ -586,7 +580,7 @@
           </div>
         </div>
 
-        <div class="card cert-card">
+        <div class="card cert-card" style="position: relative;">
           <div class="cert-icon">🏅</div>
           <div class="cert-info">
             <div class="cert-name">CompTIA Security+</div>
@@ -598,7 +592,7 @@
           </div>
         </div>
 
-        <div class="card cert-card">
+        <div class="card cert-card" style="position: relative;">
           <div class="cert-icon">🏅</div>
           <div class="cert-info">
             <div class="cert-name">CompTIA Network+</div>
@@ -610,7 +604,7 @@
           </div>
         </div>
 
-        <div class="card cert-card">
+        <div class="card cert-card" style="position: relative;">
           <div class="cert-icon">🌍</div>
           <div class="cert-info">
             <div class="cert-name">Common Purpose Certification</div>
@@ -628,29 +622,29 @@
         <div class="section-label">Recognition</div>
         <h2 class="section-title" style="font-size: 1.75rem;">Academic Achievements</h2>
       </div>
-      <div class="timeline">
-        <div class="timeline-item">
+      <div class="timeline" data-box-container="achievements" data-box-label="Academic Achievement">
+        <div class="timeline-item" style="position: relative;">
           <div class="timeline-date">2021</div>
           <div class="timeline-title">Outstanding Achievement in Object Oriented Software Development</div>
           <p class="timeline-desc">
             Recognized for exceptional understanding of core programming principles, design patterns, and clean coding practices — building robust, scalable, and maintainable software solutions.
           </p>
         </div>
-        <div class="timeline-item">
+        <div class="timeline-item" style="position: relative;">
           <div class="timeline-date">2021</div>
           <div class="timeline-title">Outstanding Achievement in Computer Organisation</div>
           <p class="timeline-desc">
             Strong grasp of low-level computing concepts including digital logic, processor architecture, memory management, and system-level programming.
           </p>
         </div>
-        <div class="timeline-item">
+        <div class="timeline-item" style="position: relative;">
           <div class="timeline-date">2020</div>
           <div class="timeline-title">Outstanding Achievement in Introduction to Computer Systems</div>
           <p class="timeline-desc">
             Demonstrated strong understanding of system fundamentals such as operating systems, computer architecture, and low-level programming.
           </p>
         </div>
-        <div class="timeline-item">
+        <div class="timeline-item" style="position: relative;">
           <div class="timeline-date">2020</div>
           <div class="timeline-title">Outstanding Achievement in Principles of Programming</div>
           <p class="timeline-desc">
@@ -669,8 +663,8 @@
         <h2 class="section-title">Education</h2>
         <p class="section-subtitle">Academic foundations in computer science and engineering</p>
       </div>
-      <div class="timeline">
-        <div class="timeline-item">
+      <div class="timeline" data-box-container="education" data-box-label="Education Item">
+        <div class="timeline-item" style="position: relative;">
           <div class="timeline-date">March 2020 — November 2023</div>
           <div class="timeline-title">Bachelor of Computer Science</div>
           <div class="timeline-org">University of Auckland (New Zealand)</div>
@@ -678,7 +672,7 @@
             Specialized in Computer Networks, Software Engineering, and Data Science. Gained strong theoretical programming and networking foundations through hands-on projects, research, and team collaborations.
           </p>
         </div>
-        <div class="timeline-item">
+        <div class="timeline-item" style="position: relative;">
           <div class="timeline-date">February 2019 — November 2020</div>
           <div class="timeline-title">Foundational Education</div>
           <div class="timeline-org">Taylor College (New Zealand)</div>
@@ -686,7 +680,7 @@
             Focused on Mathematics and Computer Science fundamentals. Participated in programming competitions and technology clubs.
           </p>
         </div>
-        <div class="timeline-item">
+        <div class="timeline-item" style="position: relative;">
           <div class="timeline-date">2015 — 2018</div>
           <div class="timeline-title">High School</div>
           <div class="timeline-org">Sisowath Highschool (Cambodia)</div>
@@ -706,29 +700,29 @@
         <h2 class="section-title">Get in Touch</h2>
         <p class="section-subtitle">I'm always open to new opportunities and collaborations</p>
       </div>
-      <div class="contact-grid">
-        <a href="mailto:rm.viseth@gmail.com" class="card contact-card">
+      <div class="contact-grid" data-box-container="contact" data-box-label="Contact Box">
+        <a href="mailto:rm.viseth@gmail.com" class="card contact-card" style="position: relative;">
           <div class="contact-icon">📧</div>
           <div>
             <div class="contact-label">Email</div>
             <div class="contact-value">rm.viseth@gmail.com</div>
           </div>
         </a>
-        <a href="tel:+642108260944" class="card contact-card">
+        <a href="tel:+642108260944" class="card contact-card" style="position: relative;">
           <div class="contact-icon">📱</div>
           <div>
             <div class="contact-label">Phone (NZ)</div>
             <div class="contact-value">+64 210 826 0944</div>
           </div>
         </a>
-        <a href="tel:+85517714577" class="card contact-card">
+        <a href="tel:+85517714577" class="card contact-card" style="position: relative;">
           <div class="contact-icon">📞</div>
           <div>
             <div class="contact-label">Phone (KH)</div>
             <div class="contact-value">+855 17 714 577</div>
           </div>
         </a>
-        <a href="https://github.com/Vertic1e" target="_blank" class="card contact-card">
+        <a href="https://github.com/Vertic1e" target="_blank" class="card contact-card" style="position: relative;">
           <div class="contact-icon">🐙</div>
           <div>
             <div class="contact-label">GitHub</div>
@@ -742,13 +736,14 @@
 
   <!-- ====== FOOTER ====== -->
   <footer class="footer">
-    <p>© <span id="currentYear"></span> <span>Mongkulviseth Rithy</span>. Crafted with precision.</p>
+    <p>© <span id="currentYear">2026</span> <span>Mongkulviseth Rithy</span>. Crafted with precision.</p>
   </footer>
 
   <!-- ====== SCROLL TO TOP ====== -->
   <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">↑</button>
 
   <script src="script.js"></script>
-</body>
 
-</html>
+
+
+</body></html>
