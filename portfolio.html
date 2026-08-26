@@ -7,10 +7,10 @@
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body style="--mouse-x: 1217px; --mouse-y: 84px;" class="edit-mode-active">
+<body data-section="hero">
 
   <!-- ====== PARTICLES ====== -->
-  <canvas id="particles-canvas" width="1745" height="865"></canvas>
+  <canvas id="particles-canvas"></canvas>
 
   <!-- ====== NAVBAR ====== -->
   <nav class="navbar" id="navbar">
@@ -20,10 +20,10 @@
     </a>
     <ul class="nav-links" id="navLinks">
       <li><a href="#hero" class="active" data-section="hero">Home</a></li>
-      <li><a href="#about" data-section="about" class="">About</a></li>
-      <li><a href="#experience" data-section="experience" class="">Experience</a></li>
-      <li><a href="#skills" data-section="skills" class="">Skills</a></li>
-      <li><a href="#projects" data-section="projects" class="">Projects</a></li>
+      <li><a href="#about" data-section="about">About</a></li>
+      <li><a href="#experience" data-section="experience">Experience</a></li>
+      <li><a href="#skills" data-section="skills">Skills</a></li>
+      <li><a href="#projects" data-section="projects">Projects</a></li>
       <li><a href="#certifications" data-section="certifications">Certifications</a></li>
       <li><a href="#education" data-section="education">Education</a></li>
       <li><a href="#contact" data-section="contact">Contact</a></li>
@@ -32,13 +32,6 @@
       <span></span><span></span><span></span>
     </button>
   </nav>
-
-  <!-- ====== EDIT MODE BAR ====== -->
-  <div class="edit-mode-bar" id="editBar">
-    ✏️ Edit Mode — Click any text or tag to modify. Use ➕ Tag to add tags and × to delete.
-    <button class="btn btn-secondary" onclick="toggleEditMode()">Exit Edit Mode</button>
-    <button class="btn btn-primary" onclick="exportContent()">Export HTML</button>
-  </div>
 
   <!-- ====== PAGE WRAPPER ====== -->
   <div class="page-wrapper">
@@ -77,9 +70,6 @@
           <a href="#projects" class="btn btn-secondary">
             <span>🔍</span> View Projects
           </a>
-          <button class="btn btn-ghost" onclick="toggleEditMode()" title="Enable inline editing">
-            <span>✏️</span> Edit Page
-          </button>
         </div>
         <div class="hero-stats">
           <div class="stat-item">
