@@ -10,7 +10,7 @@ A responsive cybersecurity professional portfolio showcasing penetration testing
   - **Professional Experience**: Roles in Offensive Security, Home Lab Infrastructure, AI Training, and Tech Lead Development.
   - **Technical Skills**: Programming, Network Infrastructure, Cybersecurity, Penetration Testing, Databases, Cloud & DevOps.
   - **Featured Projects**: Sentinel Scanner, Secure Scope, E-Commerce Platform, FiNoodle, and BotTalk.
-  - **Certifications & Academic Achievements**: CompTIA PenTest+, Security+, Network+, Common Purpose, and University Awards.
+  - **Certifications & Academic Achievements**: EC Council Ethical Hacker, Security+, Network+, Common Purpose, and University Awards.
   - **Education & Contact**: Academic background (Bachelor of Computer Science, University of Auckland) and direct contact links.
 
 ## 🛠️ Tech Stack
@@ -19,11 +19,21 @@ A responsive cybersecurity professional portfolio showcasing penetration testing
 - **GitHub Pages ready**
 
 ## 💻 Running Locally
-To run locally, you can use Python's built-in HTTP server:
+
+### Option 1: Live Reload Dev Server (Recommended)
+This runs the portfolio with instant live reload as you edit files:
+```bash
+npm run dev
+# or: npx vite --port 3000
+```
+Then visit [http://localhost:3000](http://localhost:3000). Any edits to `index.html`, `style.css`, or `script.js` will immediately update in your browser.
+
+### Option 2: Python HTTP Server
 ```bash
 python -m http.server 3000
 ```
-Then visit `http://localhost:3000`.
+Then visit [http://localhost:3000](http://localhost:3000).
 
 ---
 © 2026 Mongkulviseth Rithy. All rights reserved.
+
